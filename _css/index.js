@@ -17,3 +17,11 @@ const input = document.getElementById("input");
 
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle-thin";
+const LINE_THROUGH = "lineThrough";
+
+// Show today date 
+
+const options = { weekday : "long", month : "short", day : "numeric"};
+
+const today = new Date();
+dateElement.innerHTML = today.toLocaleDateString("en-us", options);
